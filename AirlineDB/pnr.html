@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ticket</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body{
+            background-size: cover;
+            background-repeat: no-repeat;   
+      background-image:linear-gradient(rgba(50,50,50,0.2),rgba(50,50,50,0.2)) ,url(images/pnr.jpg);
+        }
+    button,
+    a {
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>&nbsp</h1>
+        <center><h2>Welcome</h2></center>
+        <form action="pnr.php" method="post">
+            <div class="form-group">
+                <label for="name"><font color="white">Name:</font></label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="pnr"><font color="white">PNR Number:</font></label>
+                <input type="password" class="form-control" placeholder="Enter PNR number" name="pnrnum" required>
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button class="btn btn-primary"><a href="1.html">Homepage</a></button>
+        </form>
+
+        <form action="deleteticket.php" method="post">
+            <div class="form-group">
+                <br/><br/>
+         <label for="cancel"><font color="white">Cancel Ticket</font></label>
+          <input type="text" class="form-control" id="cancel" placeholder="Enter pnr" name="cancel" required>
+          </div>
+          <button class="btn" type="submit">Cancel</button>
+      </form>
+  
+    </div>
+
+</body>
+
+</html>
