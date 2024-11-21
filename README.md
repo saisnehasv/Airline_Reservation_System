@@ -37,7 +37,7 @@ The **Airline Reservation System** is a web-based application designed to simpli
 
 1. **Clone the Repository**:
    ```bash
-   git clone [<repository_url>](https://github.com/saisnehasv/Airline_Reservation_System)
+   git clone https://github.com/saisnehasv/Airline_Reservation_System
    ```
 2. **Database Setup**:
    - Import `AirlineDB.sql` or `FinalDatabase.sql` into your MySQL database.
